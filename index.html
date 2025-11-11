@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Ethical Language Optimiser</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+<header>🧠 Ethical Language Optimiser</header>
+
+<nav>
+  <a href="#humaniser">✍️ Humanise Text</a>
+  <a href="#explorer">📚 Word Explorer</a>
+  <a href="#avoider">🚫 Phrase Avoider</a>
+  <a href="#guide">🤖 AI Guide</a>
+</nav>
+
+<div class="container" id="humaniser">
+  <h2>✍️ Humanise Your Text</h2>
+  <textarea id="inputText" placeholder="Paste your text here..."></textarea>
+  <div>
+    <label>Style:</label>
+    <select id="style">
+      <option>Casual</option><option>Professional</option>
+      <option>Academic</option><option>Playful</option>
+    </select>
+    <label>Tone:</label>
+    <select id="tone">
+      <option>Friendly</option><option>Assertive</option><option>Neutral</option>
+    </select>
+    <button onclick="simulateRephrase()">🔁 Rephrase</button>
+  </div>
+  <div class="output" id="outputBox"><strong>Output:</strong><p>Result will appear here.</p></div>
+  <div class="score-bar">
+    <label>🧪 Undetectability Score:</label>
+    <div class="score"><div class="score-fill" id="scoreFill"></div></div>
+    <small id="scoreLabel">0% human-like</small>
+  </div>
+  <div class="graph">
+    <h3>📊 AI vs Human Language Ratio</h3>
+    <div class="graph-bar">
+      <div class="human" id="humanBar"></div>
+      <div class="ai" id="aiBar"></div>
+      <div class="mixed" id="mixedBar"></div>
+    </div>
+    <small id="graphLabel">Human: 0% | AI: 0% | Mixed: 0%</small>
+  </div>
+</div>
+
+<div class="container" id="explorer">
+  <h2>📚 Word & Phrase Explorer</h2>
+  <input type="text" id="wordInput" placeholder="Type a word..." />
+  <select id="lookupType">
+    <option value="definition">Definition</option>
+    <option value="usage">Usage Guide</option>
+    <option value="synonyms">Synonyms</option>
+    <option value="antonyms">Antonyms</option>
+  </select>
+  <button onclick="lookupWord()">🔍 Search</button>
+  <div class="output" id="wordOutput"><strong>Result:</strong><p>Enter a word to explore.</p></div>
+</div>
+
+<div class="container" id="avoider">
+  <h2>🚫 Phrase Avoider</h2>
+  <input type="text" id="phraseInput" placeholder="Enter a phrase..." />
+  <button onclick="checkPhrase()">⚠️ Check Phrase</button>
+  <div class="output" id="phraseOutput"><strong>Result:</strong><p>Check if your phrase sounds robotic.</p></div>
+</div>
+
+<div class="container" id="guide">
+  <h2>🤖 AI Language & Algorithm Guide</h2>
+  <div class="output">
+    <h3>📘 What is AI-generated text?</h3>
+    <p>AI-generated text mimics human writing but can sound formulaic or overly polished.</p>
+    <h3>⚠️ Common signs:</h3>
+    <ul><li>Overuse of transitional phrases</li><li>Generic statements</li><li>Repetitive structures</li></ul>
+    <h3>✅ Tips:</h3>
+    <ul><li>Use contractions</li><li>Vary sentence rhythm</li><li>Add personal voice</li></ul>
+    <h3>🚫 Phrases to avoid:</h3>
+    <p>“It is important to note that…” → Try: “Keep in mind…”</p>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
