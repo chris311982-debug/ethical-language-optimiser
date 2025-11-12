@@ -1,4 +1,4 @@
-function simulateRephrase() {
+function simulateRephrase()
   const input = document.getElementById("inputText").value;
   const outputBox = document.getElementById("outputBox");
   const scoreFill = document.getElementById("scoreFill");
@@ -45,4 +45,5 @@ function checkPhrase() {
   const aiPhrases = ["in conclusion","it is important to note that","furthermore","moreover"];
   if (!phrase) { output.innerHTML = "<strong>Result:</strong><p>Please enter a phrase.</p>"; return; }
   if (aiPhrases.includes(phrase)) {
+
     output.innerHTML = `<strong>Result:</strong><p>❌ "${
