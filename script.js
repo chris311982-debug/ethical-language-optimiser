@@ -1,5 +1,7 @@
 function simulateRephrase() {
-    // Your rephrase logic here
+  // Your rephrase logic or a test alert
+  alert('Rephrase function triggered!');
+}
     console.log("Rephrase button clicked");
     // Update the Output textarea with new text
     document.querySelector('Output').value = "Rephrased text goes here";
@@ -52,4 +54,5 @@ function checkPhrase() {
   if (aiPhrases.includes(phrase)) {
 
     output.innerHTML = `<strong>Result:</strong><p>❌ "${
+
 
